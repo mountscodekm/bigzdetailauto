@@ -1,18 +1,23 @@
 /* Title */
 body {
-    background-color: #d9d9d9 ;
+    background-color: #d9d9d9;
     text-align: center;
 }
 
-h1{
+h1 {
     color: white;
-    font-family: 'Arvo', serif;    
+    font-family: 'Arvo', serif;
     font-size: 40px;
-    margin: 50px;
+    font-size: max(2rem, 2rem + 0.5vw);
+    margin: 50px 0;
+}
+
+h1:last-child {
+    margin-bottom: 20px;
 }
 
 #title {
-    background-color: #050A30 ;
+    background-color: #050A30;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     padding: 1% 7%;
@@ -25,8 +30,9 @@ h2 {
     font-size: 40px;
     font-weight: bold;
 }
-    
-h4, h5 {
+
+h4,
+h5 {
     font-family: 'Merriweather', serif;
     font-size: 19px;
     font-weight: bold;
@@ -34,7 +40,8 @@ h4, h5 {
 }
 
 /* Paragraphs and list */
-p, li {
+p,
+li {
     font-family: 'Merriweather', serif;
     font-size: 16px;
 }
@@ -46,11 +53,11 @@ li {
 /* Nav-bar */
 .nav-item {
     padding: 0 18px;
-  }
-  
+}
+
 /* Pricing */
 #pricing {
-   padding: 3% 7%;
+    padding: 3% 7%;
 }
 
 /* contact */
@@ -72,35 +79,35 @@ li {
 .footer {
     padding: 3% 17%;
 }
-    
+
 /* First the Grid */
 .gallery-grid {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 1.5rem;
-  justify-items: center;
-  margin: 0;
-  padding: 0;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 1.5rem;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 /* The Picture Frame */
 .gallery-frame {
-  padding: .5rem;
-  font-size: 1.2rem;
-  text-align: center;
-  background-color: #050A30;
-  color: #d9d9d9;
+    padding: .5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #050A30;
+    color: #d9d9d9;
 }
 
 /* The Images */
 .gallery-img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  transition: opacity 0.25s ease-in-out;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.25s ease-in-out;
 }
 
 .gallery-img:hover {
-  opacity: .7;
+    opacity: .7;
 }
